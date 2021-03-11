@@ -16,20 +16,21 @@ build:
 
 requirements:
   host:
-    - pip
-    - python >=3
-  run:
-    - python >=3
-    - dill
-    - multiprocess
-    - numpy >=1.17
-    - pandas
-    - pyarrow >=0.17.1
     - python
+    - pip
+  run:
+    - python
+    - numpy >=1.17
+    - pyarrow >=0.17.1
+    - python-xxhash
+    - dill
+    - pandas
     - requests >=2.19.0
     - tqdm >=4.27,<4.50.0
-    - python-xxhash
     - dataclasses
+    - multiprocess
+    - importlib_metadata
+    - fsspec
 
 test:
   imports:
@@ -51,3 +52,4 @@ extra:
   recipe-maintainers:
     - oblute
     - Tata17
+    - wietsedv
