@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "1.5.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4548241548ab45a3a4259f55c9e4ea79c6b03b2445be4a5971494c1b71e35262
+  sha256: 0f3af3cfdeba1f35ea7495b0440e37e04077754f3ad038a49852ec679c2634b6
 
 build:
   noarch: python
@@ -52,5 +52,5 @@ about:
 extra:
   recipe-maintainers:
     - oblute
-    - Tata17
+    - mxr-conda
     - wietsedv
