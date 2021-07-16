@@ -40,6 +40,7 @@ Installing `datasets` from the `conda-forge` channel can be achieved by adding `
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `datasets` can be installed with:
@@ -120,4 +121,5 @@ Feedstock Maintainers
 
 * [@Tata17](https://github.com/Tata17/)
 * [@oblute](https://github.com/oblute/)
+* [@wietsedv](https://github.com/wietsedv/)
 
