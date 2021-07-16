@@ -122,4 +122,5 @@ Feedstock Maintainers
 * [@Tata17](https://github.com/Tata17/)
 * [@oblute](https://github.com/oblute/)
 * [@thewchan](https://github.com/thewchan/)
+* [@wietsedv](https://github.com/wietsedv/)
 

@@ -13,7 +13,6 @@ function startgroup {
         travis )
             echo "$1"
             echo -en 'travis_fold:start:'"${1// /}"'\\r';;
-
         github_actions )
             echo "::group::$1";;
         * )
