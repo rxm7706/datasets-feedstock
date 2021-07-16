@@ -31,6 +31,7 @@ requirements:
     - multiprocess
     - importlib_metadata
     - fsspec
+    - packaging
 
 test:
   imports:
