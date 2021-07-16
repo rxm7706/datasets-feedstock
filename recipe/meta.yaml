@@ -31,6 +31,7 @@ requirements:
     - multiprocess
     - importlib_metadata
     - fsspec
+    - packaging
 
 test:
   imports:
@@ -51,5 +52,5 @@ about:
 extra:
   recipe-maintainers:
     - oblute
-    - Tata17
+    - mxr-conda
     - wietsedv
