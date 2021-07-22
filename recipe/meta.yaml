@@ -19,19 +19,23 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
-    - numpy >=1.17
-    - pyarrow >=0.17.1
-    - python-xxhash
+    - conllu
+    - dataclasses
     - dill
+    - fsspec
+    - importlib_metadata
+    - lxml
+    - multiprocess
+    - numpy >=1.17
+    - openpyxl
+    - packaging
     - pandas
+    - py7zr
+    - pyarrow >=0.17.1
+    - python >=3.6
+    - python-xxhash
     - requests >=2.19.0
     - tqdm >=4.27,<4.50.0
-    - dataclasses
-    - multiprocess
-    - importlib_metadata
-    - fsspec
-    - packaging
 
 test:
   imports:
