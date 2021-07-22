@@ -19,6 +19,7 @@ requirements:
     - python >=3.6
     - pip
   run:
+    - conllu
     - dataclasses
     - dill
     - fsspec
