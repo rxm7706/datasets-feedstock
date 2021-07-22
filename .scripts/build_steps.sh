@@ -40,8 +40,6 @@ make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 ( endgroup "Configuring conda" ) 2> /dev/null
 
-( endgroup "Configuring conda" ) 2> /dev/null
-
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
         EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --output-id ${BUILD_OUTPUT_ID}"
@@ -59,10 +57,6 @@ else
     ( startgroup "Validating outputs" ) 2> /dev/null
 
     validate_recipe_outputs "${FEEDSTOCK_NAME}"
-
-    ( endgroup "Validating outputs" ) 2> /dev/null
-
-    ( startgroup "Uploading packages" ) 2> /dev/null
 
     ( endgroup "Validating outputs" ) 2> /dev/null
 
