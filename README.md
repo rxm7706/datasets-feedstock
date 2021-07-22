@@ -120,6 +120,7 @@ Feedstock Maintainers
 =====================
 
 * [@Tata17](https://github.com/Tata17/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 * [@thewchan](https://github.com/thewchan/)
 * [@wietsedv](https://github.com/wietsedv/)

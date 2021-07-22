@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0f3af3cfdeba1f35ea7495b0440e37e04077754f3ad038a49852ec679c2634b6
+  sha256: 851e2bdd453e7e53570007584459e43209b2849978f526e09b0465fbc5b4b574
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -19,19 +19,23 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
-    - numpy >=1.17
-    - pyarrow >=0.17.1
-    - python-xxhash
+    - conllu
+    - dataclasses
     - dill
+    - fsspec
+    - importlib_metadata
+    - lxml
+    - multiprocess
+    - numpy >=1.17
+    - openpyxl
+    - packaging
     - pandas
+    - py7zr
+    - pyarrow >=0.17.1
+    - python >=3.6
+    - python-xxhash
     - requests >=2.19.0
     - tqdm >=4.27,<4.50.0
-    - dataclasses
-    - multiprocess
-    - importlib_metadata
-    - fsspec
-    - packaging
 
 test:
   imports:
