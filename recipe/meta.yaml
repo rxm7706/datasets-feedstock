@@ -23,6 +23,7 @@ requirements:
     - dill
     - fsspec
     - importlib_metadata
+    - lxml
     - multiprocess
     - numpy >=1.17
     - packaging
