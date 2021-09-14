@@ -24,6 +24,7 @@ requirements:
     - dataclasses
     - dill
     - fsspec
+    - huggingface_hub <0.1.0
     - importlib_metadata
     - lxml
     - multiprocess
