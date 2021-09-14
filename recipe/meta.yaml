@@ -19,6 +19,7 @@ requirements:
     - python >=3.6
     - pip
   run:
+    - aiohttp
     - conllu
     - dataclasses
     - dill
