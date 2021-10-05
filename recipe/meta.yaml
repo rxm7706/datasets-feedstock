@@ -20,24 +20,20 @@ requirements:
     - pip
   run:
     - aiohttp
-    - conllu
     - dataclasses
     - dill
-    - fsspec
-    - huggingface_hub <0.1.0
-    - importlib_metadata
-    - lxml
+    - fsspec >=2021.05.0
+    - huggingface_hub >=0.0.14,<0.1.0
+    - importlib-metadata
     - multiprocess
     - numpy >=1.17
-    - openpyxl
     - packaging
     - pandas
-    - py7zr
-    - pyarrow >=0.17.1
-    - python >=3.6
-    - python-xxhash
+    - pyarrow >=1.0.0,!=4.0.0
+    - python
     - requests >=2.19.0
-    - tqdm >=4.27,<4.50.0
+    - tqdm >=4.62.1
+    - python-xxhash
 
 test:
   imports:
