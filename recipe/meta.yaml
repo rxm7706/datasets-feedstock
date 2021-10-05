@@ -1,6 +1,7 @@
 {% set name = "datasets" %}
 {% set version = "1.12.1" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -10,14 +11,15 @@ source:
   sha256: 2f3c15323dd5358184cc73e5b11e90e1e67f30c680dfc685d04903297cc09432
 
 build:
-  noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  entry_points:
+    - datasets-cli=datasets.commands.datasets_cli:main
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
     - pip
+    - python >=3.6
   run:
     - aiohttp
     - dataclasses
@@ -40,12 +42,16 @@ test:
     - datasets
     - datasets.commands
     - datasets.utils
+  commands:
+    - pip check
+    - datasets-cli --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/huggingface/datasets
   license: Apache-2.0
   license_family: Apache
-  # License file manually packaged. See: https://github.com/huggingface/datasets/pull/1007
   license_file: LICENSE
   summary: HuggingFace/Datasets is an open library of NLP datasets.
   doc_url: https://huggingface.co/docs/datasets/
