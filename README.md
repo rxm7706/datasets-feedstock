@@ -13,6 +13,15 @@ Development: https://github.com/huggingface/datasets
 
 Documentation: https://huggingface.co/docs/datasets/
 
+Datasets is a lightweight library providing one-line dataloaders for many
+public datasets and one liners to download and pre-process any of the number
+of datasets major public datasets provided on the HuggingFace Datasets Hub.
+Datasets are ready to use in a dataloader for training/evaluating a ML model
+(Numpy/Pandas/PyTorch/TensorFlow/JAX). Datasets also provide an API for
+simple, fast, and reproducible data pre-processing for the above public
+datasets as well as your own local datasets in CSV/JSON/text.
+
+
 Current build status
 ====================
 
