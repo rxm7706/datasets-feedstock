@@ -11,6 +11,7 @@ source:
   sha256: 2f3c15323dd5358184cc73e5b11e90e1e67f30c680dfc685d04903297cc09432
 
 build:
+  noarch: python
   number: 1
   entry_points:
     - datasets-cli=datasets.commands.datasets_cli:main
