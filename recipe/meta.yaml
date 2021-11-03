@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "1.14.0" %}
+{% set version = "1.15.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 102bffbccb84b647e373bc27661720f87e05ba69b1ba526f3b42b0106eda8341
+  sha256: 4b7c32a5f14e29a8c1a36070d406a2fb671bc9bd70f2ac4c49ea1d4dd5387a4d
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - dataclasses
     - dill
     - fsspec >=2021.05.0
-    - huggingface_hub >=0.0.19,<0.1.0
+    - huggingface_hub >=0.1.0,<1.0.0
     - importlib-metadata
     - multiprocess
     - numpy >=1.17
