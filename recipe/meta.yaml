@@ -42,7 +42,19 @@ test:
   imports:
     - datasets
     - datasets.commands
+    - datasets.features
+    - datasets.filesystems
+    - datasets.formatting
+    - datasets.io
+    - datasets.packaged_modules
+    - datasets.packaged_modules.csv
+    - datasets.packaged_modules.json
+    - datasets.packaged_modules.pandas
+    - datasets.packaged_modules.parquet
+    - datasets.packaged_modules.text
+    - datasets.tasks
     - datasets.utils
+    - datasets.utils.resources
   commands:
     - pip check
     - datasets-cli --help
