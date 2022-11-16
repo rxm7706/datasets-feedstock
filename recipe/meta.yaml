@@ -23,10 +23,9 @@ requirements:
     - python >=3.6
   run:
     - aiohttp
-    - dataclasses
-    - dill <0.3.6
-    - fsspec >=2021.05.0
-    - huggingface_hub >=0.1.0,<1.0.0
+    - dill <0.3.7
+    - fsspec >=2021.11.1
+    - huggingface_hub >=0.2.0,<1.0.0
     - importlib-metadata
     - multiprocess
     - numpy >=1.17
@@ -35,6 +34,7 @@ requirements:
     - pyarrow >=6.0.0
     - python >=3.6
     - python-xxhash
+    - pyyaml >=5.1
     - requests >=2.19.0
     - responses <0.19
     - tqdm >=4.62.1
@@ -48,14 +48,8 @@ test:
     - datasets.formatting
     - datasets.io
     - datasets.packaged_modules
-    - datasets.packaged_modules.csv
-    - datasets.packaged_modules.json
-    - datasets.packaged_modules.pandas
-    - datasets.packaged_modules.parquet
-    - datasets.packaged_modules.text
     - datasets.tasks
     - datasets.utils
-    - datasets.utils.resources
   commands:
     - pip check
     - datasets-cli --help
