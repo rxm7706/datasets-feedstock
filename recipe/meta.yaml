@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c82458d635539b5a5dbed0fba8837006dfc3c213a5bcc00e18a67789f0f0f16f
+  sha256: c2ddab0899e17590fe39bc5783828ac9a7331c74508ab7a345ea0dca3112ead0
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
   run:
     - aiohttp
-    - dill <0.3.7
+    - dill >=0.3.0,<0.3.7
     - fsspec >=2021.11.1
     - huggingface_hub >=0.2.0,<1.0.0
     - importlib-metadata
