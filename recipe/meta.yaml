@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
   run:
     - aiohttp
-    - dill <0.3.7
+    - dill >=0.3.0,<0.3.7
     - fsspec >=2021.11.1
     - huggingface_hub >=0.2.0,<1.0.0
     - importlib-metadata
