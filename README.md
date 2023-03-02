@@ -1,11 +1,11 @@
-About datasets
-==============
+About datasets-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datasets-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/huggingface/datasets
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datasets-feedstock/blob/main/LICENSE.txt)
 
 Summary: HuggingFace/Datasets is an open library of NLP datasets.
 
