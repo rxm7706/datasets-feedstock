@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "2.13.1" %}
+{% set version = "2.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bacb7750b1a434417312b4281a55225a3f7e0163abdd12a2a3e2d700310d5221
+  sha256: 1bb3d1c992a593949a8d3e445b358ac1db4ead00e6619ea2e5e7b6dfc222dde1
 
 build:
   noarch: python
@@ -20,23 +20,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8.0
   run:
     - aiohttp
-    - dill >=0.3.0,<0.3.7
+    - dill >=0.3.0,<0.3.8
     - fsspec >=2021.11.1
-    - huggingface_hub >=0.2.0,<1.0.0
+    - huggingface_hub >=0.14.0,<1.0.0
     - importlib-metadata
     - multiprocess
     - numpy >=1.17
     - packaging
     - pandas
-    - pyarrow >=6.0.0
-    - python >=3.6
+    - pyarrow >=8.0.0
+    - python >=3.8.0
     - python-xxhash
     - pyyaml >=5.1
     - requests >=2.19.0
-    - responses <0.19
     - tqdm >=4.62.1
 
 test:
