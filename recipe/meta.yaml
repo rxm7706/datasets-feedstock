@@ -32,6 +32,7 @@ requirements:
     - packaging
     - pandas
     - pyarrow >=8.0.0
+    - pyarrow-hotfix
     - python >=3.8.0
     - python-xxhash
     - pyyaml >=5.1
