@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "2.14.6" %}
+{% set version = "2.14.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 97ebbace8ec7af11434a87d1215379927f8fee2beab2c4a674003756ecfe920c
+  sha256: 394cf9b4ec0694b25945977b16ad5d18d5c15fb0e94141713eb8ead7452caf9e
 
 build:
   noarch: python
@@ -32,6 +32,7 @@ requirements:
     - packaging
     - pandas
     - pyarrow >=8.0.0
+    - pyarrow-hotfix
     - python >=3.8.0
     - python-xxhash
     - pyyaml >=5.1
