@@ -22,22 +22,22 @@ requirements:
     - pip
     - python >=3.8.0
   run:
-    - aiohttp
-    - dill >=0.3.0,<0.3.8
-    - fsspec >=2023.1.0,<=2023.10.0
-    - huggingface_hub >=0.19.4
-    - importlib-metadata
-    - multiprocess
-    - numpy >=1.17
-    - packaging
-    - pandas
-    - pyarrow >=8.0.0
-    - pyarrow-hotfix
     - python >=3.8.0
-    - python-xxhash
-    - pyyaml >=5.1
+    - filelock
+    - numpy >=1.17
+    - pyarrow >=12.0.0
+    - pyarrow-hotfix
+    - dill >=0.3.0,<0.3.9
+    - pandas
     - requests >=2.19.0
     - tqdm >=4.62.1
+    - python-xxhash
+    - multiprocess
+    - fsspec >=2023.1.0,<=2023.10.0
+    - aiohttp
+    - huggingface_hub >=0.19.4
+    - packaging
+    - pyyaml >=5.1 
 
 test:
   imports:
