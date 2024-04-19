@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "2.18.0" %}
+{% set version = "2.19.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cdf8b8c6abf7316377ba4f49f9589a4c74556d6b481afd0abd2284f3d69185cb
+  sha256: 0b47e08cc7af2c6800a42cadc4657b22a0afc7197786c8986d703c08d90886a6
 
 build:
   noarch: python
@@ -33,9 +33,9 @@ requirements:
     - tqdm >=4.62.1
     - python-xxhash
     - multiprocess
-    - fsspec >=2023.1.0,<=2024.2.0
+    - fsspec >=2023.1.0,<=2024.3.1
     - aiohttp
-    - huggingface_hub >=0.19.4
+    - huggingface_hub >=0.21.2
     - packaging
     - pyyaml >=5.1
 
