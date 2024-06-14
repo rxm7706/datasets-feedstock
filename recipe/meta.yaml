@@ -1,5 +1,5 @@
 {% set name = "datasets" %}
-{% set version = "2.19.2" %}
+{% set version = "2.20.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eccb82fb3bb5ee26ccc6d7a15b7f1f834e2cc4e59b7cff7733a003552bad51ef
+  sha256: 3c4dbcd27e0f642b9d41d20ff2efa721a5e04b32b2ca4009e0fc9139e324553f
 
 build:
   noarch: python
@@ -25,31 +25,24 @@ requirements:
     - python >=3.8.0
     - filelock
     - numpy >=1.17
-    - pyarrow >=12.0.0
+    - pyarrow >=15.0.0
     - pyarrow-hotfix
     - dill >=0.3.0,<0.3.9
     - pandas
-    - requests >=2.32.1
-    - tqdm >=4.62.1
+    - requests >=2.32.2
+    - tqdm >=4.66.3
     - python-xxhash
     - multiprocess
-    - fsspec >=2023.1.0,<=2024.3.1
-    - aiohttp
+    - fsspec >=2023.1.0,<=2024.5.0
     - huggingface_hub >=0.21.2
     - packaging
     - pyyaml >=5.1
+    # For fsspec[http]
+    - aiohttp !=4.0.0a0,!=4.0.0a1
 
 test:
   imports:
     - datasets
-    - datasets.commands
-    - datasets.features
-    - datasets.filesystems
-    - datasets.formatting
-    - datasets.io
-    - datasets.packaged_modules
-    - datasets.tasks
-    - datasets.utils
   commands:
     - pip check
     - datasets-cli --help
