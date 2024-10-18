@@ -1,29 +1,28 @@
 {% set name = "datasets" %}
 {% set version = "3.0.1" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/datasets-{{ version }}.tar.gz
   sha256: 40d63b09e76a3066c32e746d6fdc36fd3f29ed2acd49bf5b1a2100da32936511
 
 build:
-  noarch: python
-  number: 0
   entry_points:
     - datasets-cli=datasets.commands.datasets_cli:main
-  script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
+    - python >=3.8
     - pip
-    - python >=3.8.0
     - setuptools
   run:
-    - python >=3.8.0
+    - python >=3.8
     - filelock
     - numpy >=1.17
     - pyarrow >=15.0.0
@@ -34,11 +33,10 @@ requirements:
     - python-xxhash
     - multiprocess
     - fsspec >=2023.1.0,<=2024.6.1
+    - aiohttp
     - huggingface_hub >=0.22.0
     - packaging
     - pyyaml >=5.1
-    # For fsspec[http]
-    - aiohttp
 
 test:
   imports:
